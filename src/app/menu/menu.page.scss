@@ -1,0 +1,96 @@
+ion-toolbar{
+    --background:#34495E;
+}
+
+ion-title{
+    position: absolute;
+    color: white;
+    margin-left: -90px;
+    margin-top: 5px;
+}
+
+ion-back-button{
+    color: white;
+}
+
+ion-button{
+    width: 70%;
+
+}
+
+ion-item ion-label{
+    color: white;
+}
+
+ion-item ion-icon{
+    color:white;
+}
+
+
+ion-button ion-icon{
+    position: absolute;
+    left: 3%;
+}
+
+ion-button ion-label{
+    position: absolute;
+    left: 15%;
+}
+
+ion-icon{
+    color:#3399FF;
+}
+
+.youtubeicon{
+    position: absolute;
+    margin-left: 10%;
+    
+}
+
+.videoicon{
+    margin-left:-10%;
+}
+
+.qouteicon{
+    position:absolute;
+    margin-top:0%;
+    margin-left: 65%;
+}
+.feedbackicon{
+    position: absolute;
+    margin-top: 50%;
+    margin-left: 5%;
+    width: 30%;
+}
+.feedicon{
+    margin-left: 9px;
+
+}
+
+.shareicon{
+    position: absolute;
+    margin-top: 50%;
+    margin-left: 65%;
+}
+
+.storiesicon{
+    position: absolute;
+    margin-top: 105%;
+    margin-left: 10%;
+}
+.storyicon{
+    margin-left: -10%;
+}
+
+.abouticon{
+    position: absolute;
+    margin-top: 105%;
+    margin-left: 65%;
+
+}
+
+ion-icon{
+    color: #009688;
+    width:60px;
+    height: 60px;
+}

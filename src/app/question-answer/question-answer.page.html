@@ -1,0 +1,35 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-grid>
+        <ion-row>
+          <ion-col col-2>
+              <ion-back-button defaultHref="/home"></ion-back-button>
+          </ion-col>
+          <ion-col col-5>
+              <ion-title>Questions & Answers</ion-title>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12">
+           <ion-button expand="full" (click)="questionpage()">Ask Question</ion-button>
+             <ion-card *ngFor="let item of items" expand="full">
+               <ion-card-header>{{item.question}}</ion-card-header>
+               <ion-card-content>
+                 {{item.description}}<br>
+                 <p style="color:black;font-style: italic">Ans:{{item.answer}}</p>
+                </ion-card-content>
+             </ion-card>
+            </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-button (click)="play()">play
+    </ion-button>
+  </ion-content>
+  

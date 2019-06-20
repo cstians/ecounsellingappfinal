@@ -1,0 +1,43 @@
+ion-toolbar{
+    --background: #34495E;
+}
+
+ion-title{
+    display: inline-block;
+    position: absolute;
+    margin-left: -90px;
+    margin-top: 2px;
+    color: white;
+}
+
+ion-back-button{
+    color: white;
+}
+
+ion-textarea{
+    border: 1px solid black;
+    height: 100px;
+}
+
+ion-button{
+    --background:#0EB7CC;
+}
+
+ion-item{
+    margin-top: 15px;
+}
+
+ion-card{
+    border: 1px solid black;
+}
+
+ion-card-header{
+    color: black;
+    font-weight: bold;
+
+}
+
+ion-card-content{
+    color: black;
+}
+

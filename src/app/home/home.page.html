@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-icon src="./assets/icon/notify.svg" style="color:red" (click)="notify()" class="notify" [(ngModel)]="hide" [hidden]="hide==='hidered'"></ion-icon>
+    <ion-icon src="./assets/icon/notify.svg" style="color:white" (click)="notify()" class="notify" [(ngModel)]="hide" [hidden]="hide==='hidewhite'"></ion-icon>
+    <ion-icon src="./assets/icon/sett.svg" (click)="setModal($event)" style="color: white" class="setting"></ion-icon>
+    <ion-icon name="log-out" (click)="logout()" style="color: white" class="logout"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-grid>
+        <ion-row>
+          <ion-col size="12">
+              <ion-list>
+                <ion-item-sliding *ngFor="let item of items">
+                   <ion-item (click)="chatHome(item)">
+                    <p>{{item.display_name.substring(0,7)}}</p><br>
+                 </ion-item>
+                 <ion-item-options side="end">
+                    <ion-item-option color="danger" (click)="remove(item)">Delete</ion-item-option>
+                 </ion-item-options>
+                </ion-item-sliding>
+                </ion-list>
+          </ion-col>
+        </ion-row> 
+      </ion-grid>
+</ion-content>
+
+<ion-footer>
+    <ion-toolbar>
+              <ion-icon src="./assets/icon/chat.svg" style="color: white" style="color:white" id="chat" (click)="getUsers()"></ion-icon>
+              <span id="chatlabel">Chat</span>
+         
+              <ion-icon name="help-circle" style="color:white" id="question" (click)="questionAnswer()"></ion-icon>
+              <span id="questionlabel">Question</span>
+         
+              <ion-icon name="add-circle" style="color:white" id="depression" (click)="depression()"></ion-icon>
+              <span id="depressionlabel">Test</span>
+          
+              <ion-icon src="./assets/icon/menu.svg" style="color:white" id="menu" (click)="menu()"></ion-icon>
+              <span id="menulabel">Menu</span>       
+    </ion-toolbar>
+  </ion-footer>

@@ -1,0 +1,51 @@
+
+ .instruction{
+     margin-top: 50%;
+     height: 90%;
+ }
+
+ ion-content{
+     --background: linear-gradient(#1261A0,green 100%);
+ }
+
+ ion-card-header{
+     font-style: italic;
+     font-weight: bold;
+     color: black;
+ }
+
+ ion-card-content{
+     color: black;
+ }
+ 
+ #cardOne{
+     background: white;
+     height: 40%;
+ }
+ 
+ #cardTwo{
+     background:#C1C1C1;
+     height: 40%;
+ }
+ #cardThree{
+     background: cyan;
+     height: 40%;
+ }
+ ion-button{
+    --background:#0EB7CC; 
+     margin-left: 5%;
+     margin-right: 5%;
+ }
+ ion-card{
+     border:1px solid black;
+     height: 100%;
+ }
+
+ ion-label{
+     margin-left: 10.5%;
+     color: white;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     font-size: 20px;
+     font-style: italic;
+     
+ }

@@ -1,0 +1,108 @@
+
+ion-toolbar{
+    --background: #34495E;
+  
+}
+
+.notify{
+    position: absolute;
+    margin-top: 3px;
+    margin-left: 50%;
+    width:23px;
+    height: 23px;
+}
+   
+.setting{
+    position: absolute;
+    margin-left: 70%;
+    margin-top: 3px;
+    width:23px;
+    height: 23px;  
+    
+}
+
+.logout{
+    margin-left: 90%;
+    margin-top: 3px;
+    width:23px;
+    height: 23px;  
+
+}
+
+ion-title{
+    position: absolute;
+    margin-left: 10px;
+    color: white;
+}
+
+
+#chat{
+    position: absolute;
+    display: inline-block;
+    margin-left: 5%;
+    //margin-top: 0.2px;
+    vertical-align: middle;
+    width:25px;
+    height: 25px;
+}
+
+#chatlabel{
+    
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 21px;
+    margin-left: 5%;
+    color: white;
+    font-size: 12px;
+    
+}
+   
+#question{
+    position: absolute;
+    display: inline-block;
+    margin-left: 19%;
+    width:25px;
+    height: 25px;
+}
+
+#questionlabel{
+    position: absolute;
+    display: inline-block;
+    margin-top: 21px;
+    margin-left: 15%;
+    color: white;
+    font-size: 12px;
+}
+#depression{
+    display: inline-block;
+    position: absolute;
+    margin-left: 45%;
+    width:25px;
+    height: 25px;
+}
+#depressionlabel{
+    position: absolute;
+    display: inline-block;
+    margin-top: 21px;
+    margin-left: 45%;
+    color: white;
+    font-size: 12px;
+}
+#menu{
+    display: inline-block;
+    position: absolute;
+    margin-left: 72%;
+    width:25px;
+    height: 25px;
+
+   
+}
+
+#menulabel{
+    position: absolute;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 71%;
+    color: white;
+    font-size: 12px;
+}

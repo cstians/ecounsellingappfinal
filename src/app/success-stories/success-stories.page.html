@@ -1,0 +1,37 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+              <ion-back-button defaultHref="/menu"></ion-back-button>
+          </ion-col>
+          <ion-col>
+              <ion-title>Success Stories</ion-title>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content padding>
+  
+    <div class="main_story_class">
+      <ion-label>Post your story about how this app helped you</ion-label>
+      <ion-textarea [(ngModel)]="stories" placeholder="Type here..."></ion-textarea>
+      <ion-button expand="full" (click)="sendStories()">Submit</ion-button>
+    </div>
+
+    <ion-list>
+        <ion-item-sliding *ngFor="let storys of storylist">
+             <ion-item>
+             <p>{{story.story}}</p><br>
+           </ion-item>
+           <ion-item-options side="end">
+              <ion-item-option color="danger" (click)="remove(item)">Delete</ion-item-option>
+           </ion-item-options>
+          </ion-item-sliding>
+     </ion-list>
+
+    
+   </ion-content>
+  

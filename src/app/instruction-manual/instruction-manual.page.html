@@ -1,0 +1,23 @@
+
+<ion-content>
+  <div class="instruction">
+      <ion-label>Read instruction carefully</ion-label>
+      <ion-card  [hidden]="card1==='c1'" id="cardOne">
+          <ion-card-header>Anonymous</ion-card-header>
+          <ion-card-content>As our app focus on anonimity, give unique username to maintain it</ion-card-content>
+        </ion-card>
+        <ion-card  [hidden]="card2==='c2'" id="cardTwo">
+            <ion-card-header>Who amm i?</ion-card-header>
+            <ion-card-content>Please select User radio button if u are seeker and if you are potential counsellor do select Peer radio button</ion-card-content>
+        </ion-card>
+        <ion-card  [hidden]="card3==='c3'" id="cardThree">
+            <ion-card-header>Misuse</ion-card-header>
+            <ion-card-content>Don't use it for meaningless purpose. If user is found misusing app, then he or she will be reported to admin and keep under observation.</ion-card-content>
+        </ion-card>
+        <ion-button expand="full"(click)="button1()" [hidden]="but1==='but1'">Next</ion-button>
+        <ion-button expand="full" (click)="button2()" [hidden]="but2==='but2'">Next</ion-button>
+        <ion-button expand="full" (click)="button3()"[hidden]="but3==='but3'">Next</ion-button>
+      </div>
+  </ion-content>
+ 
+  

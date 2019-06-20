@@ -1,0 +1,32 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+              <ion-back-button defaultHref="/home"></ion-back-button>
+          </ion-col>
+          <ion-col>
+            <ion-title>Depression Test</ion-title>
+          </ion-col>
+        </ion-row>
+      </ion-grid>  
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12">
+            <div padding class="question"><ion-item>{{mainQuestion}}</ion-item><br>
+            <ion-item>{{subQuestion}}</ion-item></div><br>
+  
+            <ion-button expand="full" (click)="yesMethod()" [hidden]="yesbutton==='hide'">Yes</ion-button>
+           <ion-button expand="full" (click)="noMethod()"  [hidden]="nobutton==='hide'" >No</ion-button>
+            <ion-button expand="full" (click)="back()">{{toggle}}</ion-button>
+            
+        </ion-col>
+      </ion-row>
+    </ion-grid> 
+  
+  </ion-content>
+  

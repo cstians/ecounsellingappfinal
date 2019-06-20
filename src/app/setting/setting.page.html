@@ -1,0 +1,38 @@
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-list>
+            <ion-item >
+              <p>Account Setting</p>
+              <ion-icon name="arrow-dropright" slot="end" (click)="accountSetting()"></ion-icon>
+            </ion-item>
+      
+            <ion-item >
+              <ion-label>Rintone two</ion-label>  
+              <ion-toggle slot="end" (ionChange)="playTone()"></ion-toggle>
+            </ion-item>
+            <ion-item >
+                <ion-label>Rintone two</ion-label>  
+                <ion-toggle slot="end"></ion-toggle>
+             </ion-item>
+             <ion-item >
+                <ion-label>Rintone three</ion-label>  
+                <ion-toggle slot="end"></ion-toggle>
+             </ion-item>
+             <ion-item >
+                <ion-label>Rintone four</ion-label>  
+                <ion-toggle slot="end"></ion-toggle>
+             </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+<ion-footer>
+  {{test}}
+    <ion-button expand="full" (click)="closeModal()">Close</ion-button>
+</ion-footer>
+
+
+ 

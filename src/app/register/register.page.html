@@ -1,0 +1,52 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-row>
+        <ion-col>
+            <ion-back-button defaultHref="/login"></ion-back-button>
+        </ion-col>
+        <ion-col>
+          <ion-title>Registration</ion-title>
+        </ion-col>
+      </ion-row>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12">
+           <div class="register_div_class">
+              <ion-input type="text" [(ngModel)]="user_name" placeholder="Username" name="uusename"></ion-input><br>
+              <ion-input type="password" [(ngModel)]="user_password" placeholder="Password" name="password"></ion-input><br>
+              <ion-input type="password" [(ngModel)]="user_cpassword" placeholder="Re-enter Password" name="cpassword"></ion-input><br>
+              
+            
+                &nbsp;&nbsp;<ion-label>Gender:</ion-label><br><br>  
+                <ion-radio-group [(ngModel)]="gender">
+                <ion-radio value="Male" ></ion-radio>&nbsp;
+                <ion-label>Male</ion-label><br><br>
+               
+                <ion-radio value="Female" ></ion-radio>&nbsp;
+                <ion-label>Female</ion-label><br><br>
+                <ion-radio value="Others" ></ion-radio>&nbsp;
+                <ion-label>Others</ion-label>
+              </ion-radio-group>
+
+              <hr style="Border:0.4px solid #0EB7CC;"/><br>
+              <ion-input type="qualification" [(ngModel)]="qualification" placeholder="Qualification" name="qualification"></ion-input><br>
+             
+              &nbsp;&nbsp;<ion-label>Role:</ion-label><br><br> 
+              <ion-radio-group [(ngModel)]="designation">
+                <ion-radio value="User"></ion-radio>&nbsp;
+                <ion-label>User</ion-label><br><br>
+                <ion-radio value="Peer"></ion-radio>&nbsp;
+               <ion-label>Peer</ion-label>&nbsp;
+              </ion-radio-group>
+              <hr style="Border:0.4px solid white;"/>
+             <ion-button expand="full" (click)="popup()">Submit</ion-button>
+            </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+  

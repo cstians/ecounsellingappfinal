@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+           <ion-back-button defaultHref="/home"></ion-back-button>
+        </ion-col>
+        <ion-col>
+            <ion-title>Feedback</ion-title>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <div class="feed_div">
+    <ion-icon src="./assets/icon/feedbackicon.svg"></ion-icon>
+  </div>
+
+  
+    <ion-textarea type="text" [(ngModel)]="message" Placeholder="Give Your Sincere Feedback"></ion-textarea>
+    <br>
+ 
+
+  <ion-button expand="full" (click)="feedback()">Submit</ion-button>
+
+  
+
+
+</ion-content>

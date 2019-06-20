@@ -1,0 +1,94 @@
+ ion-toolbar{
+     --background:#34495E;
+ }
+ ion-title{
+    position: absolute;
+    color: white;
+    margin-left: -90px;
+    margin-top: 5px;
+
+}
+ion-back-button{
+    color: white;
+}
+
+.report{
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 70%;
+}
+
+
+    .message_row {
+    
+    background-color: #fff;
+    
+    }
+    
+    .message {
+    
+    padding: 10px! important;
+    
+    transition: all 250ms ease-in-out !important;
+    
+    border-radius: 10px !important;
+    
+    margin-bottom: 4px !important;
+    
+    }
+    
+    .my_message {
+    
+    background: color(#FFF, primary) !important;
+    
+    color: #000 !important;
+    
+    }
+    
+    .other_message {
+    
+    background: #0000ff !important;
+    
+    color: #000 !important;
+    
+    }
+    
+    .time {
+    
+    color: #afafaf;
+    
+    float: right;
+    
+    font-size: small;
+    
+    }
+    ion-icon{
+        
+        position: absolute;
+        margin-left: 90%;
+        margin-top: -20px;
+        color: red;
+    }
+
+    .send{
+        margin-left: 60%;
+        margin-top: 3%;
+        width: 40px;
+        height: 40px;
+
+    }
+
+    ion-input{
+        width: 60%;
+    }
+
+    .chatBack{
+        position: absolute;
+        color:white;
+    }
+
+    ion-title{
+        margin-left: 10px;
+      
+
+    }

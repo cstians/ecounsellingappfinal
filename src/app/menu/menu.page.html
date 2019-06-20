@@ -1,0 +1,58 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+              <ion-back-button defaultHref="/home"></ion-back-button>
+          </ion-col>
+          <ion-col>
+            <ion-title>Menu</ion-title>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-toolbar>
+  </ion-header>   
+  
+  <ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+                <div class="youtubeicon">
+                  <ion-icon name="logo-youtube" (click)="mVideo()" class="videoicon"></ion-icon><br>
+                  <ion-label>Videos</ion-label>
+                </div>
+        
+                <div  class="qouteicon">
+                  <ion-icon src="./assets/icon/quotes.svg" (click)="qoute()"></ion-icon><br>
+                  <ion-label>Quotation</ion-label>
+                </div><br>
+            
+                <div class="feedbackicon">
+                 <ion-icon src="./assets/icon/feedbackicon.svg" (click)="feeds()" class="feedicon"></ion-icon><br>
+                 <ion-label style="margin-left:10%">Feedback</ion-label>
+                 </div>
+            
+            
+              <div class="shareicon">
+              <ion-icon name="share" (click)="Share()"></ion-icon><br>
+              <ion-label style="margin-left:10%">Share</ion-label>
+             </div>
+          
+        
+                 <div class="storiesicon">
+                  <ion-icon src="./assets/icon/success.svg" (click)="stories()" class="storyicon"></ion-icon><br>
+                  <ion-label style="margin-left:3%">Stories</ion-label>
+                </div>
+            
+        
+                  <div class="abouticon">
+                  <ion-icon src="./assets/icon/contact.svg" (click)="about()"></ion-icon><br>
+                  <ion-label style="margin-left:12%">About</ion-label>
+                </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+  
+  
+  
